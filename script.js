@@ -26,7 +26,6 @@ function addTask(){
         li.addEventListener("click", function() {
             li.classList.toggle("check");
             storage(); // Call the storage function
-            clearStorage();
         });
 
         // Create a delete button
@@ -37,7 +36,6 @@ function addTask(){
         span.addEventListener("click", function() {
             li.remove();
             storage(); // Call the storage function
-            clearStorage();
 
         });
 
@@ -52,7 +50,6 @@ function addTask(){
         document.getElementById('date-input').value = "";
 
         storage(); // Call the storage function
-        clearStorage();
 
     }
 }
@@ -61,9 +58,7 @@ function storage(){ //need to call this storage() function every time we add any
     localStorage.setItem("data", list.innerText);
 }
 
-function clearStorage(){ //need to call this storage() function every time we add any changes
-    localStorage.removeItem("data");
-}
+
 
 // Function to display the list content from local storage
 function showList(){
