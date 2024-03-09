@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
 
-    <title> GPA Calculator </title>
-    
+    <title> Task Management </title>
+
     <!-- custom css file link -->
     <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
-
-
-
-
-
-
-
+    <div class = "container">
+        <div class="Task">
+        <h1> Task - To Do List <img src="images/icon.png"></h1>
+        <div class = "row">
+            <input type="checkbox" id="priority-checkbox"> Priority
+            <input type="text" id="input-box" placeholder="Add task...">
+            <input type="date" id="date-input">
+            <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list"></ul>
+        </div>
+    </div>
     <!-- custom js file link -->
     <script src="script.js"></script>
+
 
 </body>
 </html>
